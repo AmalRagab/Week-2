@@ -1,0 +1,53 @@
+1️- What are the different types of constructors in object-oriented programming? Explain
+each type briefly.
+
+Constructors are special methods in a class that are automatically called when an object is created and have Different types include:
+
+➜  Default constructor :-
+it's a constructor with no arguments and has default values for data fields.
+--EX::
+  public:
+        Book(){
+        };
+
+➜  Parameterized constructor :-
+it's a constructor with arguments and has specific values for data fields which is obtained by an object.
+--EX::
+  public:
+        int x ;
+        Book(int y){
+            x = y ;
+        };
+
+➜  Parameterized constructor :-
+it's a constructor that initializes an object using another one of the same class.
+--EX::
+   public:
+    Book(const Book&other){
+      ......copy for values...
+       };
+
+🌸🌸----------------------------🌸🌸
+
+2- What is a destructor? When is it invoked in a program?
+
+Constructors are special methods in a class that are automatically called when an object life time is ended . 
+The most common use is to deallocate memory that was allocated for the object by the constructor .
+--EX::
+public:
+ ~Book(){
+        }; 
+
+🌸🌸----------------------------🌸🌸
+
+3- What is a static class or static member? How is it different from an instance
+member?
+
+➜  Static Class :-
+a class that contains only static data fields or methods and can't be instantiated.
+
+➜  Static Member :-
+ it's a data field or method which doesn't belong to a single instance of a class which means that its shared across all objects 
+and to invoke it , use the class name rather than the object name.
+
+But the instance member is specific to each object and to invoke it , use the object name.
